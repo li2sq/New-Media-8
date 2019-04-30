@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript</title>
+<script>
+	function tellMyFortune()
+	  var name= document. getElementById("name").value;
+	  var kids= document. getElementById("kids").value;
+	  var job= document. getElementById("job").value;
+	  var home= document. getElementById("home").value;
+	
+	 var fortune="You,"+ name +", are going to have" + kids +"kids. You will be a "+ job +"place,you will live"+ home +
+	 alert(fortune)
+	}
+	
+	</script>
+</head>
+
+<body>
+   <form>
+<form>
+<label for="name">Name</label>	
+<input type="text" id="name" placeholder="Name"/>
+<br/>
+<label for='kid'> Number of Kids</label>
+<input type="number" id="kids" min="0" placeholder="How many?"
+<br/>
+
+<label for="job">Job Title</label>	
+<input type="text" id="job" placeholder="What do you do?"/>
+<br/>
+<label for='Home'> Home</label>
+<input type="text" id="Home" placeholder="Where do you live?"
+<br/>
+<input type="button" value="Tell my fortune" onclick="tellmyFortune"/>
+
+	   
+	   
+	   </form>
+	
+	
+	</form>
+</body>
+
+</html>

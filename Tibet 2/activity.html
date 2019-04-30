@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+<div class="hero">
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+</video>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+
+</script>
+<div class="wrapper">
+  <div class="contact-form">
+    <div class="content"><h1>Activity</h1>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Archery')">Archery</button>
+  <button class="tablinks" onclick="openCity(event, 'Hiking')">Hiking</button>
+  <button class="tablinks" onclick="openCity(event,
+ 'Horse Riding')">Horse Riding</button>
+ <button class="tablinks" onclick="openCity(event,
+ 'Bicycle tour')">Bicycle tour</button>
+ <button class="tablinks" onclick="openCity(event,
+ 'Photographic Adventures')">Natural Photography</button>
+</div>
+
+<div id="Archery" class="tabcontent">
+  <h3>Archery</h3>
+  <p>Unlike the five-ring archery targets popular in the Olympic Games and other international contests, the triangle target, about 80 cm high and with a bottom width of 70 cm, is made of earth and placed on the ground. .</p>
+</div>
+
+<div id="Hiking" class="tabcontent">
+  <h3>Hiking</h3>
+  <p>A place as vast and mountainous as Tibet offers almost unlimited potential for trekking and walkers. From the frigid high northern plains to the steamy jungles of the southeast, Tibet is a land of rich cultual and ecological contrasts. The most popular trekking is in the centre of the region; close to cultural rich towns and easily accessible via modern highways..</p> 
+</div>
+
+<div id="Horse Riding" class="tabcontent">
+  <h3>Horse Riding</h3>
+  <p>On the Hidden Trails Tibet horseback riding holiday you will ride back in time to travel with the nomads. Our ride takes you along the great divide between the Yangtze and Yellow Rivers.While riding, you will see countless animals, varying from yaks, to sheep, to other horses as well as the Black tents of Tibetan Nomads.</p>
+</div>
+<div id="Bicycle tour" class="tabcontent">
+  <h3>Bicycle tour</h3>
+  <p>Bicycling through Tibet is known as one of the most challenging cycling adventures known to man. If you are an avid cyclist and wish to push yourself to the limit, then cycling in Tibet is the place for you!
+Of course, if you’re looking for an adventure that isn’t so intense, cycling is still a good option. Plan your trip well, or go with a cycling tour group to see the incredible Tibetan Plateau as never before. Be prepared in case of harsh weather conditions, and don’t forget to glance up every once and awhile and admire the incredible scenery surrounding you.The best time to cycle through Tibet is between the months of May and October. Winter is a no-go.</p>
+</div>
+<div id="Photographic Adventures" class="tabcontent">
+  <h3>Natural Photography</h3>
+  <p>Beauty in nature abounds throughout Tibet, and what better way to remember your adventure than to keep incredible pictures as mementos for years to come!
+Visiting places such as Mount Kailash, Lake Namtso, and the cultural centers of Kathmandu and Lhasa will give you incredible opportunities for photography of nature and of people in their native culture. At the end of your trip, you’ll have a whole stock of photos to add to your portfolio full of stunning scenery and vibrant colors.</p>
+</div>
+	  </div>
+  </div>
+</div>	
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<div id="mySidenav" class="sidenav">
+  <a href="wow.html" id="Home">Home</a>
+  <a href="activity.html" id="activity">Activity</a>
+  <a href="culture.html" id="culture">Culture</a>
+  <a href="contact.html" id="contact">Contact</a>
+</div>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
